@@ -1,0 +1,739 @@
+{
+  "player": {
+    "hero": {
+      "position": {
+        "x": 10,
+        "y": 11,
+        "z": 1
+      }
+    },
+    "resource": {
+      "rock": 200,
+      "wood": 200,
+      "food": 200,
+      "coin": 200
+    },
+    "buildings": {
+      "Keep": [
+        {
+          "position": {
+            "x": 9,
+            "y": 9,
+            "z": 1
+          }
+        }
+      ],
+      "House": [
+        {
+          "position": {
+            "x": 8,
+            "y": 8,
+            "z": 1
+          }
+        }
+      ],
+      "Well": [
+        {
+          "position": {
+            "x": 8,
+            "y": 11,
+            "z": 1
+          }
+        }
+      ],
+      "Windmill": [
+        {
+          "position": {
+            "x": 11,
+            "y": 11,
+            "z": 1
+          }
+        }
+      ]
+    },
+    "creatures": {
+      "Farmer": [
+        {
+          "position": {
+            "x": 9,
+            "y": 11,
+            "z": 1
+          }
+        }
+      ]
+    }
+  },
+  "map": {
+    "resources": {
+      "Rock": {
+        "count": 20,
+        "typePool": [
+          "bald",
+          "light-grass",
+          "dark-grass"
+        ]
+      },
+      "Tree": {
+        "count": 20,
+        "typePool": [
+          "normal",
+          "lighter",
+          "light"
+        ]
+      }
+    },
+    "monsters": {
+      "pool": [
+        {
+          "className": "Slime",
+          "typePool": ["blue", "green"]
+        },
+        {
+          "className": "Demon",
+          "typePool": ["red", "purple", "armoured-red"]
+        }
+      ],
+      "initCount": 20,
+      "portalBornCount": 20,
+      "portalBornDuration": 600
+    }
+  },
+  "keepLevelAwardBuildings": {
+    "2": {
+      "area": {
+        "x": 6,
+        "y": 6,
+        "width": 8,
+        "height": 8
+      },
+      "buildings": [
+        {
+          "className": "House",
+          "level": 2,
+          "position": {
+            "x": 8,
+            "y": 8,
+            "z": 1
+          }
+        },
+        {
+          "className": "House",
+          "level": 2,
+          "position": {
+            "x": 11,
+            "y": 8,
+            "z": 1
+          }
+        },
+        {
+          "className": "Well",
+          "level": 2,
+          "position": {
+            "x": 8,
+            "y": 11,
+            "z": 1
+          }
+        },
+        {
+          "className": "Windmill",
+          "level": 2,
+          "position": {
+            "x": 11,
+            "y": 11,
+            "z": 1
+          }
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 6,
+            "y": 6,
+            "z": 1
+          },
+          "type": "top-left-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 7,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 8,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 9,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 10,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 11,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 12,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 13,
+            "y": 6,
+            "z": 1
+          },
+          "type": "top-right-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 12,
+            "y": 6,
+            "z": 1
+          },
+          "type": "top-right-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 6,
+            "y": 7,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 6,
+            "y": 8,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 6,
+            "y": 9,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 6,
+            "y": 10,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 6,
+            "y": 11,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 6,
+            "y": 12,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 6,
+            "y": 13,
+            "z": 1
+          },
+          "type": "down-left-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 7,
+            "y": 13,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 8,
+            "y": 13,
+            "z": 1
+          },
+          "type": "right-end-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 11,
+            "y": 13,
+            "z": 1
+          },
+          "type": "left-end-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 12,
+            "y": 13,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 13,
+            "y": 13,
+            "z": 1
+          },
+          "type": "down-right-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 13,
+            "y": 12,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 13,
+            "y": 11,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 13,
+            "y": 10,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 13,
+            "y": 9,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 13,
+            "y": 8,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 1,
+          "position": {
+            "x": 13,
+            "y": 7,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        }
+      ]
+    },
+    "3": {
+      "area": {
+        "x": 6,
+        "y": 6,
+        "width": 8,
+        "height": 8
+      },
+      "buildings": [
+        {
+          "className": "House",
+          "level": 3,
+          "position": {
+            "x": 8,
+            "y": 8,
+            "z": 1
+          }
+        },
+        {
+          "className": "House",
+          "level": 3,
+          "position": {
+            "x": 11,
+            "y": 8,
+            "z": 1
+          }
+        },
+        {
+          "className": "Well",
+          "level": 3,
+          "position": {
+            "x": 8,
+            "y": 11,
+            "z": 1
+          }
+        },
+        {
+          "className": "Windmill",
+          "level": 3,
+          "position": {
+            "x": 11,
+            "y": 11,
+            "z": 1
+          }
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 6,
+            "y": 6,
+            "z": 1
+          },
+          "type": "top-left-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 7,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 8,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 9,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 10,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 11,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 12,
+            "y": 6,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 13,
+            "y": 6,
+            "z": 1
+          },
+          "type": "top-right-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 12,
+            "y": 6,
+            "z": 1
+          },
+          "type": "top-right-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 6,
+            "y": 7,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 6,
+            "y": 8,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 6,
+            "y": 9,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 6,
+            "y": 10,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 6,
+            "y": 11,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 6,
+            "y": 12,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 6,
+            "y": 13,
+            "z": 1
+          },
+          "type": "down-left-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 7,
+            "y": 13,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 8,
+            "y": 13,
+            "z": 1
+          },
+          "type": "right-end-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 11,
+            "y": 13,
+            "z": 1
+          },
+          "type": "left-end-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 12,
+            "y": 13,
+            "z": 1
+          },
+          "type": "left-right-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 13,
+            "y": 13,
+            "z": 1
+          },
+          "type": "down-right-pillar"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 13,
+            "y": 12,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 13,
+            "y": 11,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 13,
+            "y": 10,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 13,
+            "y": 9,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 13,
+            "y": 8,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        },
+        {
+          "className": "Wall",
+          "level": 2,
+          "position": {
+            "x": 13,
+            "y": 7,
+            "z": 1
+          },
+          "type": "top-down-corridor"
+        }
+      ]
+    },
+    "4": {
+      "area": {},
+      "buildings": []
+    }
+  }
+}
